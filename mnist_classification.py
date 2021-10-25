@@ -14,7 +14,7 @@ from tensorflow.keras.metrics import Mean, SparseCategoricalAccuracy
 
 def get_mnist_ds():
     (train_validation_ds, test_ds), ds_info = tfds.load(name='mnist',
-                                                         shuffle_files=True,
+                                                        shuffle_files=True,
                                                         as_supervised=True,
                                                         split=['train', 'test'],
                                                         with_info=True)
